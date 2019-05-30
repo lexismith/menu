@@ -1,0 +1,124 @@
+
+
+h1 {
+    text-align: center;
+    /* text-shadow: 2px 2px 2px #aaa; */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    /* Animation Example */
+    /* animation-name: colorAnimation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite; */
+}
+
+img:hover {
+    animation: shake .5s;
+    animation-iteration-count: infinite;
+}
+
+
+h3 {
+    font-size: 23px;
+    text-align: center;
+}
+
+body {
+    background: #fcf8f3;
+    color: #6e7da2;
+    font-family: 'Montserrat', sans-serif; 
+    text-align: center;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+}
+
+ul {
+    font-size: 12px;
+    font-family: 'Raleway', sans-serif;
+    list-style-type: none;
+    padding-left: 0px; /* Look into why padding-left needs to be reset */
+}
+
+hr {
+    border: none;
+    border-top: 3px dotted;
+    border-color: #db996c;
+    width: 70%;
+}
+
+/* used https://css-tricks.com/body-border/ */
+#top, #bottom, #left, #right {
+	background: #aedadd;
+	position: fixed;
+	}
+	#left, #right {
+		top: 0; bottom: 0;
+		width: 15px;
+		}
+		#left { left: 0; }
+		#right { right: 0; }
+		
+	#top, #bottom {
+		left: 0; right: 0;
+		height: 15px;
+		}
+		#top { top: 0; }
+		#bottom { bottom: 0; }
+
+/* background chalkboard 
+body {
+    background-image: url("https://www.middleburgsteakhouse.com/wp-content/uploads/chalkboard-background.jpg");
+    color: white;
+} */
+
+/* background gradient
+    body {
+    background-image: linear-gradient(#dae1e7, #dd6b4d);
+} */
+
+/* changed the size of the h3 px because i did not want to go through the html and change them all to h2 */
+
+/* * {
+    padding: 0;
+    margin: 0;
+} */
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+/* Bullshit animation */
+/* @keyframes colorAnimation {
+    0% {
+        font-size: 12px;
+        background: coral;
+    }
+    25% {
+        font-size: 14px;
+    }
+
+    50% {
+        font-size: 18px;
+        background: lightcoral;
+    }
+
+    75% {
+        font-size: 22px;
+    }
+    100% {
+        font-size: 26px;
+        background: red;
+        color: white;
+    }
+} */
